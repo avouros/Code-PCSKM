@@ -24,3 +24,29 @@ __exeSimus.m:__ Runs the whole analysis and stores the results inside the _./Gen
 - __kfolds:__ selection of _k_ for k-fold validation.
 
 __CVstatsPer.m:__ Generates statistics about the data sets such as percentage of used constraints during the k-fold validation.
+
+
+
+## Citations for software and code that we have used in this project
+
+**Density K-Means++:**
+
+[Nidheesh, N., KA Abdul Nazeer, and P. M. Ameer. "An enhanced deterministic K-Means clustering algorithm for cancer subtype prediction from gene expression data." Computers in biology and medicine 91 (2017): 213-221.](https://www.sciencedirect.com/science/article/pii/S0010482517303402)
+
+MATLAB code was based on the R implementation of the algorithm; code: [`dkmpp_0.1.0`](https://github.com/nidheesh-n/dkmpp)
+
+**MPCK-Means:**
+
+[Bilenko, Mikhail, Sugato Basu, and Raymond J. Mooney. "Integrating constraints and metric learning in semi-supervised clustering." Proceedings of the twenty-first international conference on Machine learning. 2004.](https://dl.acm.org/doi/abs/10.1145/1015330.1015360)
+
+Modified [WekaUT](http://www.cs.utexas.edu/users/ml/risc/code/) in order to read initial centroids from text files and write results to text files.
+
+**Sparse clustering:**
+
+[Witten, Daniela M., and Robert Tibshirani. "A framework for feature selection in clustering." Journal of the American Statistical Association 105.490 (2010): 713-726.](https://amstat.tandfonline.com/doi/abs/10.1198/jasa.2010.tm09415)
+
+[Brodinová, Šárka, et al. "Robust and sparse k-means clustering for high-dimensional data." Advances in Data Analysis and Classification (2017): 1-28.](https://link.springer.com/article/10.1007/s11634-019-00356-9)
+
+MATLAB code was based on the R implementation of the algorithm; packages: [`sparcl`](https://cran.r-project.org/web/packages/sparcl/index.html) and [`wrsk`](https://github.com/brodsa/wrsk)
+
+
