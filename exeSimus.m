@@ -27,7 +27,8 @@ CONSTR_PERC = 1; %0: flat number of constraints, 1: (%) of constraints
 LOG = 2; % 0: no log file and no display, 1: log file only, 
          % 2: display only, else: both
 
-datasets = {'40_3_3_7_0_0_0_0','40_3_5_5_0_0_0_0','real','MWM'};
+datasets = {'40_3_3_7_0_0_0_0','40_3_5_5_0_0_0_0','real','MWM',...
+    'digits048','digits389'};
 
 % Algorithms options
 constraints_type = {[1,1],[0,1],[1,0],[-1,-1]}; %Activate [ML,CL] constraints
@@ -39,9 +40,9 @@ end
 citer = 10; %iterations per number of constraints
 sstep = 0.2; %sparsity parameter values to be tested [1.1 : sstep : sqrt(numFeatures)]
 maxIter = 25; %iterations for algorithm to reach convergence
-method_centers = {'Density K-Means++','MPCK-Means'};
+method_centers = {'Density K-Means++','MPCK-Means','ROBIN(D)'};
 method_clustering = {'Lloyd','SK-Means','MPCK-Means','PCK-Means','PCSK-Means'};
-method_centers_str = {'DKMPP','MPCK'};
+method_centers_str = {'DKMPP','MPCK','ROBIN'};
 method_clustering_str = {'LKM','SKM','MPCKM','PCKM','PCSKM'};
 
 % Cross validation options

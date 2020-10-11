@@ -35,6 +35,8 @@ function [idx,centroids,w,iflag,init_centers] = semisupervised_test_exe_solution
         switch method_centers
             case 'Density K-Means++'
                 init_centers = x(dkmpp_init(x,k),:);
+            case 'ROBIN(D)'
+                init_centers = x(ROBIN(x,k,10,'DETERMINISTIC',1),:);
             case 'MPCK-Means'
                 [~,~,~,~,~,init_centers,~] = mpckmeans(x,k,constr,'init_only',1);
             otherwise
