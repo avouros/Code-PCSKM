@@ -4,9 +4,9 @@ clc
 
 %% Percentage of used constraints
 
-datastr = {'fisheriris';'ionospere';'TT-SC-ST';'Brod40-3'};
+datastr = {'fisheriris';'ionospere';'digits048';'digits389';'MWM TTSCST';'MWM TTCHST';'Brod40-3'};
 
-Ns = [150,351,424,120];
+Ns = [150,351,150,150,424,406,120];
   
 cv = 10;
 nconstr = 1:0.5:10;

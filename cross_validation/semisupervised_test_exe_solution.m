@@ -37,6 +37,8 @@ function [idx,centroids,w,iflag,init_centers] = semisupervised_test_exe_solution
                 init_centers = x(dkmpp_init(x,k),:);
             case 'ROBIN(D)'
                 init_centers = x(ROBIN(x,k,10,'DETERMINISTIC',1),:);
+            case 'Maximin(D)'
+                init_centers = x(maximin(x,k,2),:);
             case 'MPCK-Means'
                 [~,~,~,~,~,init_centers,~] = mpckmeans(x,k,constr,'init_only',1);
             otherwise

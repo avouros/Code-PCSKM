@@ -37,12 +37,12 @@ if ~CONSTR_PERC
 else
     constraints_number = 1:0.5:10; %Percentage of constraints to use
 end
-citer = 10; %iterations per number of constraints
+citer = 25; %iterations per number of constraints
 sstep = 0.2; %sparsity parameter values to be tested [1.1 : sstep : sqrt(numFeatures)]
 maxIter = 25; %iterations for algorithm to reach convergence
-method_centers = {'Density K-Means++','MPCK-Means','ROBIN(D)'};
+method_centers = {'Density K-Means++','MPCK-Means','ROBIN(D)','Maximin(D)'};
 method_clustering = {'Lloyd','SK-Means','MPCK-Means','PCK-Means','PCSK-Means'};
-method_centers_str = {'DKMPP','MPCK','ROBIN'};
+method_centers_str = {'DKMPP','MPCK','ROBIN','Maximin'};
 method_clustering_str = {'LKM','SKM','MPCKM','PCKM','PCSKM'};
 
 % Cross validation options
