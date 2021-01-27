@@ -1,4 +1,4 @@
-This repository contains the code used to produce the results of the manuscript: [A semi-supervised sparse K-Means algorithm](https://arxiv.org/abs/2003.06973).
+This repository contains the code used to produce the results of the manuscript: [A semi-supervised sparse K-Means algorithm](https://www.sciencedirect.com/science/article/abs/pii/S0167865520304268) ([arxiv version](https://arxiv.org/abs/2003.06973)).
 
 # Code-PCSKM
 
